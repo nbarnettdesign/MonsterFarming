@@ -1,0 +1,17 @@
+id,Name,skill1,exp1,skill2,exp2,skill3,exp3
+100,Slime,Slime,30,None,0,None,0
+101,Human,Human,50,None,0,None,0
+102,Skeleton,Skeleton,80,None,0,None,0
+200,Sword,Blade,35,Armor,5,None,0
+201,Sheild,Armor,50,None,0,None,0
+202,Mace,Bludgeon,40,None,0,None,0
+203,Bow,Shoot,40,None,0,None,0
+300,Cloth Shirt,Armor,3,None,0,None,0
+301,Cloth Pants,Armor,2,None,0,None,0
+302,Plate Chest,Armor,50,None,0,None,0
+303,Plate Pants,Armor,45,None,0,None,0
+304,Plate Helmet,Armor,30,None,0,None,0
+400,Pouch,Storage,40,None,0,None,0
+401,Backpack,Storage,85,None,0,None,0
+600,Rock,Bludgeon,2,Shoot,3,Armor,2
+601,Stick,Blade,3,None,0,None,0

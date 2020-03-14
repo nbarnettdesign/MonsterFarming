@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4c9ba7bc754234909996778c1bf10175, type: 3}
+  m_Name: Plate Legs
+  m_EditorClassIdentifier: 
+  name: Plate Pants
+  icon: {fileID: 21300000, guid: 63cbf96858c754eae844e2e8b9a2d4f6, type: 3}
+  stackNumber: 1
+  maxStackNumber: 10
+  isStackable: 1
+  isDefaultItem: 0
+  ID: 304
+  skills:
+  - id: 300
+    skill: Armor
+    exp: 45
+    level: 0
+    expSpeed: 0
+  equipSlot: 2
+  mesh: {fileID: 5801406397293831835, guid: f11c7f06803174564a13d1a137f35ad7, type: 3}
+  coveredMeshRegions: 00000000
+  armorModifier: 4
+  damageModifier: 0

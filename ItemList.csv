@@ -1,0 +1,21 @@
+ItemList
+System.Int32,System.String,System.String,System.Int32,System.String,System.Int32,System.String,System.Int32,UnityEngine.Sprite,System.Boolean,System.Collections.Generic.List`1[Skills]
+id,name,skill1,exp1,skill2,exp2,skill3,exp3,icon,isDefaultItem,skills
+0,New Item,Skill 1,0,Skill 2,0,Skill 3,0,Helmet icon
+100,Slime,Slime,30,None,0,None,0,Helmet icon
+101,Human,Human,50,None,0,None,0,Helmet icon
+102,Skeleton,Skeleton,80,None,0,None,0,Helmet icon
+200,Sword,Blade,35,Armor,5,None,0,Helmet icon
+201,Sheild,Armor,50,None,0,None,0,Helmet icon
+202,Mace,Bludgeon,40,None,0,None,0,Helmet icon
+203,Bow,Shoot,40,None,0,None,0,Helmet icon
+300,Cloth Shirt,Armor,3,None,0,None,0,Helmet icon
+301,Cloth Pants,Armor,2,None,0,None,0,Helmet icon
+302,Plate Chest,Armor,50,None,0,None,0,Helmet icon
+303,Plate Pants,Armor,45,None,0,None,0,Helmet icon
+304,Plate Helmet,Armor,30,None,0,None,0,Helmet icon
+400,Pouch,Storage,40,None,0,None,0,Helmet icon
+401,Backpack,Storage,85,None,0,None,0,Helmet icon
+600,Rock,Bludgeon,2,Shoot,3,Armor,2,Helmet icon
+601,Stick,Blade,3,None,0,None,0,Helmet icon
+ (UnityEngine.Sprite),False,System.Collections.Generic.List`1[Skills]

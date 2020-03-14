@@ -1,0 +1,4 @@
+Equipment
+EquipmentSlot,UnityEngine.SkinnedMeshRenderer,EquipmentMeshRegion[],System.Int32,System.Int32,System.String,UnityEngine.Sprite,System.Boolean,System.Collections.Generic.List`1[Skills]
+equipSlot,mesh,coveredMeshRegions,armorModifier,damageModifier,name,icon,isDefaultItem,skills
+Head,Hair (UnityEngine.SkinnedMeshRenderer),EquipmentMeshRegion[],0,0,Default Hair,null,True,System.Collections.Generic.List`1[Skills]
