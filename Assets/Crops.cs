@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Crops : Interactable
 {
@@ -10,6 +11,8 @@ public class Crops : Interactable
     public GameObject farmPlot;
 
     public Item item;
+    public GameObject cropMesh;
+    public Slider slider;
     public Crops itemPickup;
     public InventoryManager inventoryManger;
     public bool wasPickedUp;
@@ -30,6 +33,7 @@ public class Crops : Interactable
     {
         itemPickup = this;
         growthTimer = 0;
+        slider.value = 0;
         inventoryManger = FindObjectOfType<InventoryManager>();
     }
 
@@ -40,11 +44,14 @@ public class Crops : Interactable
             if (growthTimer <= timeToGrow)
             {
                 growthTimer += Time.deltaTime;
-                this.gameObject.transform.localScale = new Vector3((growthTimer / timeToGrow), (growthTimer / timeToGrow), (growthTimer / timeToGrow));
+                cropMesh.transform.localScale = new Vector3((growthTimer / timeToGrow), (growthTimer / timeToGrow), (growthTimer / timeToGrow));
+                slider.value = growthTimer / timeToGrow;
             }
             else
             {
                 finishedGrowing = true;
+                slider.value = 1;
+                slider.gameObject.SetActive(false);
                 gameObject.transform.localScale = new Vector3(1, 1, 1);
                 if (item.multipleLoot)
                 {

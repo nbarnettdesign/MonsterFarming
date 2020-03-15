@@ -11,6 +11,7 @@ public class InventorySlot : MonoBehaviour
     public ItemPickup itemPickup;
     public Crops cropPickup;
     InventoryManager inventoryManager;
+    HotbarSelect hotbarSelect;
     InventorySlot slot;
 
     public Image icon;
@@ -25,6 +26,7 @@ public class InventorySlot : MonoBehaviour
     private void Start()
     {
         inventoryManager = (InventoryManager)FindObjectOfType(typeof(InventoryManager));
+        hotbarSelect = (HotbarSelect)FindObjectOfType(typeof(HotbarSelect));
         slot = this;
         hotbar = GameObject.FindGameObjectWithTag("Hotbar");
         UpdateSlot();
@@ -99,8 +101,9 @@ public class InventorySlot : MonoBehaviour
     public void UpdateCropText()
     {
         //stackNumber.text = cropPickup.stackNumber.ToString();
+        hotbarSelect.ActiveHotbar();
         stackNumber.text = textAmount.ToString();
-        if(textAmount == 0)
+        if (textAmount == 0)
         {
             ClearSlot();
             inventoryManager.hotbar.GetComponent<HotbarSelect>().ActiveHotbar();

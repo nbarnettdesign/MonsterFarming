@@ -2,7 +2,7 @@
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
 using System.Collections;
-
+using TMPro;
 /// <summary>
 /// Every item's cell must contain this script
 /// </summary>
@@ -363,24 +363,64 @@ public class DragAndDropCell : MonoBehaviour, IDropHandler
 		{
 			DragAndDropItem firstItem = firstCell.GetItem();                // Get item from first cell
 			DragAndDropItem secondItem = secondCell.GetItem();              // Get item from second cell
-			// Swap items
-			if (firstItem != null)
+            InventorySlot firstSlot = firstCell.GetComponent<InventorySlot>();
+            InventorySlot secondSlot = secondCell.GetComponent<InventorySlot>();
+            Item firstSlotItem = firstSlot.item;
+            Item secondSlotItem = secondSlot.item;
+            ItemPickup firstSlotItemPickup = firstSlot.itemPickup;
+            ItemPickup secondSlotItemPickup = secondSlot.itemPickup;
+            Image firstSlotIcon = firstSlot.icon;
+            Image secondSlotIcon = secondSlot.icon;
+            Button firstSlotRemove = firstSlot.removeButton;
+            Button secondSlotRemove = secondSlot.removeButton;
+            TextMeshProUGUI firstSlotStackNumber = firstSlot.stackNumber;
+            TextMeshProUGUI secondSlotStackNumber = secondSlot.stackNumber;
+            int firstSlotTextAmount = firstSlot.textAmount;
+            int secondSlotTextAmount = secondSlot.textAmount;
+            int firstSlotMaxTextAmount = firstSlot.maxTextAmount;
+            int secondSlotMaxTextAmount = secondSlot.maxTextAmount;
+            bool firstSlotAvailable = firstSlot.isAvailable;
+            bool secondSlotAvailable = secondSlot.isAvailable;
+
+
+            // Swap items
+            if (firstItem != null)
 			{
-				firstItem.transform.SetParent(secondCell.transform, false);
+                
+                firstItem.transform.SetParent(secondCell.transform, false);
 				firstItem.transform.localPosition = Vector3.zero;
 				firstItem.MakeRaycast(true);
-			}
+                firstSlot.item = secondSlotItem;
+                firstSlot.itemPickup = secondSlotItemPickup;
+                firstSlot.icon = secondSlotIcon;
+                firstSlot.removeButton = secondSlotRemove;
+                firstSlot.stackNumber = secondSlotStackNumber;
+                firstSlot.textAmount = secondSlotTextAmount;
+                firstSlot.maxTextAmount = secondSlotMaxTextAmount;
+                firstSlot.isAvailable = secondSlotAvailable;
+
+            }
 			if (secondItem != null)
 			{
-				secondItem.transform.SetParent(firstCell.transform, false);
+                secondItem.transform.SetParent(firstCell.transform, false);
 				secondItem.transform.localPosition = Vector3.zero;
 				secondItem.MakeRaycast(true);
-			}
+                secondSlot.item = firstSlotItem;
+                secondSlot.itemPickup = firstSlotItemPickup;
+                secondSlot.icon = firstSlotIcon;
+                secondSlot.removeButton = firstSlotRemove;
+                secondSlot.stackNumber = firstSlotStackNumber;
+                secondSlot.textAmount = firstSlotTextAmount;
+                secondSlot.maxTextAmount = firstSlotMaxTextAmount;
+                secondSlot.isAvailable = firstSlotAvailable;
+            }
 			// Update states
 			firstCell.UpdateMyItem();
 			secondCell.UpdateMyItem();
 			firstCell.UpdateBackgroundState();
 			secondCell.UpdateBackgroundState();
+            firstSlot.UpdateCropText();
+            secondSlot.UpdateCropText();
 		}
 	}
 }

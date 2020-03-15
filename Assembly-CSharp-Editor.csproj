@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{67C4B6D0-6957-3210-8446-14B4C65FE866}</ProjectGuid>
+    <ProjectGuid>{64E8D175-506F-D845-D710-14A2424AFF95}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp-Editor</AssemblyName>
@@ -101,37 +101,37 @@
     <Compile Include="Assets\Environment\PostProcessing\Editor\Utils\FxStyles.cs" />
     <Compile Include="Assets\Environment\PostProcessing\Editor\Utils\ReflectionUtils.cs" />
     <Reference Include="UnityEditor.TestRunner">
-      <HintPath>/Users/nickbarnett/Desktop/Dev/Slime Farmer/Library/ScriptAssemblies/UnityEditor.TestRunner.dll</HintPath>
+      <HintPath>/Users/nickbarnett/Desktop/Dev/Slime Farmer/MonsterFarming/MonsterFarming/Library/ScriptAssemblies/UnityEditor.TestRunner.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.TestRunner">
-      <HintPath>/Users/nickbarnett/Desktop/Dev/Slime Farmer/Library/ScriptAssemblies/UnityEngine.TestRunner.dll</HintPath>
+      <HintPath>/Users/nickbarnett/Desktop/Dev/Slime Farmer/MonsterFarming/MonsterFarming/Library/ScriptAssemblies/UnityEngine.TestRunner.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Timeline.Editor">
-      <HintPath>/Users/nickbarnett/Desktop/Dev/Slime Farmer/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
+      <HintPath>/Users/nickbarnett/Desktop/Dev/Slime Farmer/MonsterFarming/MonsterFarming/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VSCode.Editor">
-      <HintPath>/Users/nickbarnett/Desktop/Dev/Slime Farmer/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
+      <HintPath>/Users/nickbarnett/Desktop/Dev/Slime Farmer/MonsterFarming/MonsterFarming/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
-      <HintPath>/Users/nickbarnett/Desktop/Dev/Slime Farmer/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+      <HintPath>/Users/nickbarnett/Desktop/Dev/Slime Farmer/MonsterFarming/MonsterFarming/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UI">
-      <HintPath>/Users/nickbarnett/Desktop/Dev/Slime Farmer/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+      <HintPath>/Users/nickbarnett/Desktop/Dev/Slime Farmer/MonsterFarming/MonsterFarming/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Timeline">
-      <HintPath>/Users/nickbarnett/Desktop/Dev/Slime Farmer/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
+      <HintPath>/Users/nickbarnett/Desktop/Dev/Slime Farmer/MonsterFarming/MonsterFarming/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
     </Reference>
     <Reference Include="Unity.CollabProxy.Editor">
-      <HintPath>/Users/nickbarnett/Desktop/Dev/Slime Farmer/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
+      <HintPath>/Users/nickbarnett/Desktop/Dev/Slime Farmer/MonsterFarming/MonsterFarming/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Rider.Editor">
-      <HintPath>/Users/nickbarnett/Desktop/Dev/Slime Farmer/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
+      <HintPath>/Users/nickbarnett/Desktop/Dev/Slime Farmer/MonsterFarming/MonsterFarming/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
-      <HintPath>/Users/nickbarnett/Desktop/Dev/Slime Farmer/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+      <HintPath>/Users/nickbarnett/Desktop/Dev/Slime Farmer/MonsterFarming/MonsterFarming/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.UI">
-      <HintPath>/Users/nickbarnett/Desktop/Dev/Slime Farmer/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+      <HintPath>/Users/nickbarnett/Desktop/Dev/Slime Farmer/MonsterFarming/MonsterFarming/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>/Applications/Unity/Hub/Editor/2019.2.9f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
@@ -329,7 +329,7 @@
       <HintPath>/Applications/Visual Studio.app/Contents/Resources/lib/monodevelop/AddIns/MonoDevelop.Unity/Editor/SyntaxTree.VisualStudio.Unity.Bridge.dll</HintPath>
     </Reference>
     <Reference Include="nunit.framework">
-      <HintPath>/Users/nickbarnett/Desktop/Dev/Slime Farmer/Library/PackageCache/com.unity.ext.nunit@1.0.0/net35/unity-custom/nunit.framework.dll</HintPath>
+      <HintPath>/Users/nickbarnett/Desktop/Dev/Slime Farmer/MonsterFarming/MonsterFarming/Library/PackageCache/com.unity.ext.nunit@1.0.0/net35/unity-custom/nunit.framework.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.iOS.Extensions.Xcode">
       <HintPath>/Applications/Unity/Hub/Editor/2019.2.9f1/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
@@ -694,7 +694,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Assembly-CSharp.csproj">
-      <Project>{FBC1FA01-2D17-62D0-D4E5-AA887D6AE2E8}</Project>
+      <Project>{AC403315-73F2-E5AD-FB6F-4EE6E144F515}</Project>
       <Name>Assembly-CSharp</Name>
     </ProjectReference>
   </ItemGroup>
